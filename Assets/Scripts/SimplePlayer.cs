@@ -4,6 +4,10 @@ public class SimplePlayer : MonoBehaviour
 {
     private Rigidbody2D rigid;
     private Animator anim;
+    private ParticleSystem grassPar;
+
+
+          
 
     [Header("Ground and Wall Check")]
     [SerializeField] private float groundDistCheck = 1f;
@@ -37,6 +41,7 @@ public class SimplePlayer : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
+        grassPar = Getcomponent
     }
     private void Update()
     {
